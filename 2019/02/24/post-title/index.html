@@ -49,8 +49,8 @@
     </title>
 
     <!-- Favicons -->
-    <link rel="icon shortcut" type="image/ico" href="/img/F.png">
-    <link rel="icon" href="/img/F.png">
+    <link rel="icon shortcut" type="image/ico" href="/img/favicon.png">
+    <link rel="icon" href="/img/favicon.png">
 
     <meta name="format-detection" content="telephone=no"/>
     <meta name="description" itemprop="description" content="">
@@ -220,7 +220,7 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="大波浪的小破站">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon" href="/img/F.png">
+    <link rel="apple-touch-icon" href="/img/favicon.png">
 
     <!-- Site Verification -->
     
@@ -233,7 +233,7 @@
     <meta property="og:url" content="http://yoursite.com/2019/02/24/post-title/">
     <meta property="og:type" content="blog">
     <meta property="og:title" content="第一篇 | 大波浪的小破站">
-    <meta property="og:image" content="/img/F.png">
+    <meta property="og:image" content="/img/favicon.png">
     <meta property="og:description" content="">
     
 
@@ -270,14 +270,14 @@
             "@type": "ImageObject",
             "url": "/img/avatar.png"
         },
-        "description": "Hi, nice to meet you"
+        "description": "程序改变世界~"
     },
     "publisher": {
         "@type": "Organization",
         "name": "大波浪的小破站",
         "logo": {
             "@type":"ImageObject",
-            "url": "/img/F.png"
+            "url": "/img/favicon.png"
         }
     },
     "keywords": "",
@@ -357,8 +357,15 @@
     <!-- Paradox Post Header -->
     
         
-            <!-- Pure Thumbnail -->
-            <div class="post_thumbnail-pure mdl-card__media mdl-color-text--grey-50" style="background-color:#0097A7 !important">
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').addClass('lazy');
+</script>
+
         
     
             <p class="article-headline-p">
@@ -413,7 +420,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=第一篇&url=http://yoursite.com/2019/02/24/post-title/index.html&pic=http://yoursite.com/img/F.png&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=第一篇&url=http://yoursite.com/2019/02/24/post-title/index.html&pic=http://yoursite.com/img/favicon.png&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -422,35 +429,23 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=第一篇&url=http://yoursite.com/2019/02/24/post-title/index.html&via=bigwave" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 Twitter
-            </li>
-        </a>
-    
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com/2019/02/24/post-title/index.html" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 Facebook
-            </li>
-        </a>
-    
 
     <!-- Share Google+ -->
-    
-        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com/2019/02/24/post-title/index.html" target="_blank">
-            <li class="mdl-menu__item">
-                分享到 Google+
-            </li>
-        </a>
     
 
     <!-- Share LinkedIn -->
     
 
     <!-- Share QQ -->
+    
+        <a class="post_share-link" href="http://connect.qq.com/widget/shareqq/index.html?site=大波浪的小破站&title=第一篇&summary=&pics=http://yoursite.com/img/favicon.png&url=http://yoursite.com/2019/02/24/post-title/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 QQ
+            </li>
+        </a>
     
 
     <!-- Share Telegram -->
@@ -538,7 +533,7 @@
 
     <!-- Sidebar Email -->
     <a data-toggle="dropdown" class="sidebar-brand" href="#settings-dropdown">
-        youremail@email.com
+        1273069376@qq.com
         <b class="caret"></b>
     </a>
 </div>
@@ -551,7 +546,7 @@
         <ul id="settings-dropdown" class="dropdown-menu">
             
                 <li>
-                    <a href="#" target="_blank" title="Email Me">
+                    <a href="https://mail.qq.com/" target="_blank" title="Email Me">
                         
                             <i class="material-icons sidebar-material-icons sidebar-indent-left1pc-element">email</i>
                         
@@ -597,6 +592,16 @@
     
 
     <!-- Pages  -->
+    
+        <li>
+            <a href="/about" title="关于咱">
+                
+                    <i class="material-icons sidebar-material-icons">person</i>
+                
+                关于咱
+            </a>
+        </li>
+        
     
 
     <!-- Article Number  -->
